@@ -7,33 +7,43 @@ export default {
       links: [
         {
           link: 'Characters',
+          status: true
         },
         {
           link: 'Comics',
+          status: true
         },
         {
           link: 'Movies',
+          status: true
         },
         {
           link: 'TV',
+          status: true
         },
         {
           link: 'Games',
+          status: true
         },
         {
           link: 'Collectibles',
+          status: true
         },
         {
           link: 'Videos',
+          status: true
         },
         {
           link: 'Fans',
+          status: true
         },
         {
           link: 'News',
+          status: true
         },
         {
           link: 'Shop',
+          status: true
         },
       ]
     }
@@ -50,7 +60,8 @@ export default {
       <div class="col-10">
         <ul class="nav justify-content-end">
           <li class="nav-item" v-for="(link, c) in links">
-            <a class="nav-link active text-dark" aria-current="page" href="">{{ link.link.toUpperCase() }}</a>
+            <a class="nav-link active text-dark" aria-current="page" href="" v-if="link.status == true">{{
+              link.link.toUpperCase() }}</a>
           </li>
         </ul>
       </div>
