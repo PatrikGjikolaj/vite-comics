@@ -2,50 +2,12 @@
 
 export default {
     name: "AppFooter",
+    props: {
+        links: Object,
+    },
     data() {
         return {
-            links: [
-                {
-                    link: 'Characters',
-                    status: true
-                },
-                {
-                    link: 'Comics',
-                    status: true
-                },
-                {
-                    link: 'Movies',
-                    status: true
-                },
-                {
-                    link: 'TV',
-                    status: true
-                },
-                {
-                    link: 'Games',
-                    status: true
-                },
-                {
-                    link: 'Collectibles',
-                    status: true
-                },
-                {
-                    link: 'Videos',
-                    status: true
-                },
-                {
-                    link: 'Fans',
-                    status: true
-                },
-                {
-                    link: 'News',
-                    status: true
-                },
-                {
-                    link: 'Shop',
-                    status: true
-                },
-            ]
+
         }
     }
 }
@@ -108,7 +70,7 @@ export default {
         <div class="container">
             <div class="row py-3 align-items-center">
                 <div class="col-2">
-                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                    <button type="button" class="btn btn-outline-primary">SIGN-UP NOW</button>
                 </div>
                 <div class="col-10 d-flex justify-content-end gap-2">
                     <span class="mx-2 align-self-center text-primary">FOLLOW US</span>

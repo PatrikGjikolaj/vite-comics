@@ -2,50 +2,11 @@
 
 export default {
   name: "AppHeader",
+  props: {
+    links: Object
+  },
   data() {
     return {
-      links: [
-        {
-          link: 'Characters',
-          status: true
-        },
-        {
-          link: 'Comics',
-          status: true
-        },
-        {
-          link: 'Movies',
-          status: true
-        },
-        {
-          link: 'TV',
-          status: true
-        },
-        {
-          link: 'Games',
-          status: true
-        },
-        {
-          link: 'Collectibles',
-          status: true
-        },
-        {
-          link: 'Videos',
-          status: true
-        },
-        {
-          link: 'Fans',
-          status: true
-        },
-        {
-          link: 'News',
-          status: true
-        },
-        {
-          link: 'Shop',
-          status: true
-        },
-      ]
     }
   }
 }
@@ -53,8 +14,8 @@ export default {
 
 <template>
   <div class="container">
-    <div class="row  py-2 align-items-center">
-      <div class="col-2">
+    <div class="row align-items-center">
+      <div class="col-2 py-2">
         <img src="/public/dc-logo.png" alt="" class="logo">
       </div>
       <div class="col-10">
@@ -72,6 +33,10 @@ export default {
 <style scoped>
 .logo {
   width: 50px;
+}
+
+.nav-item a:hover {
+  border-bottom: solid 3px;
 }
 </style>
 
